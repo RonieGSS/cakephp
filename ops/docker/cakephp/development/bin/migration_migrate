@@ -1,8 +1,8 @@
 #! /bin/bash
-
-if [[ $(docker ps -q -f name=hxhronie_cakephp) ]];
+containerName='hxhronie_cakephp'
+if [[ $(docker ps -q -f name=$containerName) ]];
 then
-	docker exec -it hxhronie_cakephp /bin/bash -c "bin/cake migrations migrate"
+	docker exec -it $containerName /bin/bash -c "bin/cake migrations migrate"
 else
 	echo 'Container not running!'
 fi
