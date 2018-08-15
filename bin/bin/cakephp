@@ -1,0 +1,74 @@
+#! /bin/bash
+echo '
+= = = = = = = = = = = = = = = = = = = = = = = = = =
+                 CakePHP Commands
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ Select from the following set of commands:
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+                   DESCRIPTIONS
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+1) Docker Compose     => Build and run containers
+2) Container Logs     => Show container logs
+3) Create Seed        => Migrate all acl tables
+4) Migration Create   => Create migration file
+5) Migrate Acl Tables => Migrate all acl tables
+6) Migration Create   => Create migration file
+7) Migration Migrate  => Run all migrations
+8) Back               => Return to bin/gss panel
+9) Quit               => Close the panel
+= = = = = = = = = = = = = = = = = = = = = = = = = =
+'
+PS3='Please enter the number of your choice: '
+cakephp[0]="Docker Compose"
+cakephp[1]="Container Logs"
+cakephp[2]="Create Seed"
+cakephp[3]="Migrate Seed"
+cakephp[4]="Migrate Acl Tables"
+cakephp[5]="Migration Create"
+cakephp[6]="Migration Migrate"
+cakephp[7]="Back"
+cakephp[8]="Quit"
+cd `dirname $0`/../../
+select opt in "${cakephp[@]}"
+do
+    case $opt in
+        "Docker Compose")
+            bash ops/docker/cakephp/development/bin/compose_up
+            break
+            ;;
+        "Container Logs")
+            bash ops/docker/cakephp/development/bin/logs
+            break
+            ;;
+        "Create Seed")
+            bash ops/docker/cakephp/development/bin/seed_create
+            break
+            ;;
+        "Migrate Seed")
+            bash ops/docker/cakephp/development/bin/seed_migrate
+            break
+            ;;
+        "Migrate Acl Tables")
+            bash ops/docker/cakephp/development/bin/migrate_acl_tables
+            break
+            ;;
+        "Migration Create")
+            bash ops/docker/cakephp/development/bin/migration_create
+            break
+            ;;
+        "Migration Migrate")
+            bash ops/docker/cakephp/development/bin/migration_migrate
+            break
+            ;;
+        "Back")
+            bash bin/gss
+            break
+            ;;
+        "Quit")
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done

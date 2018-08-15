@@ -1,0 +1,9 @@
+#! /bin/bash
+
+if [[ $(docker ps -q -f name=hxhronie_cakephp) ]];
+then
+	read -p 'Table Name: ' table
+	docker exec -it hxhronie_cakephp /bin/bash -c "bin/cake bake seed --data ${table}"
+else
+	echo 'Container not running!'
+fi

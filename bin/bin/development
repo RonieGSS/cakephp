@@ -1,0 +1,31 @@
+#! /bin/bash
+echo '
+= = = = = = = = = = = = = = = = = = = = = = = = = =
+                Development Commands
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ Select from the following set of commands:
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+                   DESCRIPTIONS
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+1) Back          => Return to bin/gss panel
+2) Quit          => Close the panel
+= = = = = = = = = = = = = = = = = = = = = = = = = =  
+'
+PS3='Please enter the number of your choice: '
+development=("Back" "Quit")
+cd `dirname $0`/../../
+select opt in "${development[@]}"
+do
+    case $opt in
+        "Back")
+            bash bin/gss
+            break
+            ;;
+        "Quit")
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done

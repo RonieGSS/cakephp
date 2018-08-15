@@ -1,0 +1,1799 @@
+2018-08-03 02:17:40 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/src/cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /var/www/html/src/cakephp/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-08-14 07:47:37 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:37 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:41 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:42 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:45 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:45 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:46 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:47 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:47:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:48:11 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:48:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:48:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:48:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:48:11 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:48:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:48:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:48:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:48:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:48:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:48:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:44 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:44 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:44 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:44 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:45 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:51 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:51 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:54:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:59:32 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:59:32 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:59:32 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:59:32 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:59:33 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:59:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:59:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:59:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:59:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:59:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 07:59:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:02:04 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:02:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:02:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:02:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:02:05 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:02:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:02:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:02:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:02:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:02:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:02:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:36 Error: [PDOException] SQLSTATE[HY000] [2002] Connection refused
+Request URL: /
+Stack Trace:
+#0 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Driver.php(92): PDO->__construct('mysql:host=mysq...', 'root', 'test', Array)
+#1 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(106): Cake\Database\Driver->_connect('mysql:host=mysq...', Array)
+#2 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Connection.php(391): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(547): Cake\Database\Connection->getSchemaCollection()
+#8 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(270): Cake\ORM\Table->getSchema()
+#9 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#10 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1753): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#11 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1347): Cake\ORM\Table->query()
+#12 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Datasource/Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#13 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\UsersTable), Array, Array)
+#14 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#15 /var/www/html/src/cakephp/src/Controller/UsersController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#16 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(596): App\Controller\UsersController->index()
+#17 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#18 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#19 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 /var/www/html/src/cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 /var/www/html/src/cakephp/webroot/index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+
+2018-08-14 08:07:36 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:36 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:36 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:36 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:37 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:41 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.users' doesn't exist
+Request URL: /
+Stack Trace:
+#0 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(270): Cake\ORM\Table->getSchema()
+#4 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#5 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1753): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#6 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1347): Cake\ORM\Table->query()
+#7 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Datasource/Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#8 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\UsersTable), Array, Array)
+#9 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#10 /var/www/html/src/cakephp/src/Controller/UsersController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#11 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(596): App\Controller\UsersController->index()
+#12 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#14 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/src/cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /var/www/html/src/cakephp/webroot/index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2018-08-14 08:07:41 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /
+Client IP: 172.23.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:42 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php line=952 in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:07:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Debugger.php:952) in [/var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Cake\Core\Plugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 141
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2018-08-14 08:09:54 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.users' doesn't exist
+Request URL: /
+Stack Trace:
+#0 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(270): Cake\ORM\Table->getSchema()
+#4 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#5 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1753): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#6 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1347): Cake\ORM\Table->query()
+#7 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Datasource/Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#8 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\UsersTable), Array, Array)
+#9 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#10 /var/www/html/src/cakephp/src/Controller/UsersController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#11 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(596): App\Controller\UsersController->index()
+#12 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#14 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/src/cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /var/www/html/src/cakephp/webroot/index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2018-08-14 08:10:38 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.users' doesn't exist
+Request URL: /
+Stack Trace:
+#0 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(270): Cake\ORM\Table->getSchema()
+#4 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#5 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1753): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#6 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1347): Cake\ORM\Table->query()
+#7 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Datasource/Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#8 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\UsersTable), Array, Array)
+#9 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#10 /var/www/html/src/cakephp/src/Controller/UsersController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#11 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(596): App\Controller\UsersController->index()
+#12 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#14 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/src/cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /var/www/html/src/cakephp/webroot/index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2018-08-14 08:10:54 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.users' doesn't exist
+Request URL: /
+Stack Trace:
+#0 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(270): Cake\ORM\Table->getSchema()
+#4 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#5 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1753): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#6 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1347): Cake\ORM\Table->query()
+#7 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Datasource/Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#8 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\UsersTable), Array, Array)
+#9 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#10 /var/www/html/src/cakephp/src/Controller/UsersController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#11 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(596): App\Controller\UsersController->index()
+#12 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#14 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/src/cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /var/www/html/src/cakephp/webroot/index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2018-08-15 02:39:55 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.users' doesn't exist
+Request URL: /
+Stack Trace:
+#0 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(270): Cake\ORM\Table->getSchema()
+#4 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#5 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1753): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#6 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1347): Cake\ORM\Table->query()
+#7 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Datasource/Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#8 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\UsersTable), Array, Array)
+#9 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#10 /var/www/html/src/cakephp/src/Controller/UsersController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#11 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(596): App\Controller\UsersController->index()
+#12 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#14 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/src/cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /var/www/html/src/cakephp/webroot/index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2018-08-15 02:40:25 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.users' doesn't exist
+Request URL: /
+Stack Trace:
+#0 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(270): Cake\ORM\Table->getSchema()
+#4 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#5 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1753): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#6 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1347): Cake\ORM\Table->query()
+#7 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Datasource/Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#8 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\UsersTable), Array, Array)
+#9 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#10 /var/www/html/src/cakephp/src/Controller/UsersController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#11 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(596): App\Controller\UsersController->index()
+#12 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#14 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/src/cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /var/www/html/src/cakephp/webroot/index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2018-08-15 02:56:41 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.users' doesn't exist
+Request URL: /
+Stack Trace:
+#0 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(270): Cake\ORM\Table->getSchema()
+#4 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#5 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1753): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#6 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1347): Cake\ORM\Table->query()
+#7 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Datasource/Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#8 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\UsersTable), Array, Array)
+#9 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#10 /var/www/html/src/cakephp/src/Controller/UsersController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#11 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(596): App\Controller\UsersController->index()
+#12 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#14 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/src/cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /var/www/html/src/cakephp/webroot/index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2018-08-15 02:57:11 Error: [InvalidArgumentException] The plugin class `Acl\Plugin` cannot be found. Ensure your autoloader is correct. in /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php on line 127
+Stack Trace:
+#0 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(95): Cake\Http\BaseApplication->makePlugin('Acl\\Plugin', Array)
+#1 /var/www/html/src/cakephp/src/Application.php(38): Cake\Http\BaseApplication->addPlugin('Acl', Array)
+#2 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Server.php(121): App\Application->bootstrap()
+#3 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Server.php(82): Cake\Http\Server->bootstrap()
+#4 /var/www/html/src/cakephp/webroot/index.php(40): Cake\Http\Server->run()
+#5 {main}
+
+
+2018-08-15 02:57:38 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakephp.users' doesn't exist
+Request URL: /
+Stack Trace:
+#0 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(270): Cake\ORM\Table->getSchema()
+#4 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Query.php(168): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsersTable))
+#5 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1753): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsersTable))
+#6 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/ORM/Table.php(1347): Cake\ORM\Table->query()
+#7 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Datasource/Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#8 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\UsersTable), Array, Array)
+#9 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#10 /var/www/html/src/cakephp/src/Controller/UsersController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#11 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Controller/Controller.php(596): App\Controller\UsersController->index()
+#12 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#14 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/BaseApplication.php(228): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(158): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/src/cakephp/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 /var/www/html/src/cakephp/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /var/www/html/src/cakephp/webroot/index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
