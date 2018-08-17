@@ -1,7 +1,7 @@
 <header class="masthead text-center text-white">
     <div class="masthead-content">
         <div class="container">
-            <h1 class="masthead-heading mb-0">SHARESHIMA Template</h1>
+            <h1 class="masthead-heading mb-0">CAKEPHP Template</h1>
             <h2 class="masthead-subheading mb-0">Will Rock Your Socks Off</h2>
             <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
         </div>
