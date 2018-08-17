@@ -14,6 +14,10 @@
  */
 namespace App\Controller;
 
+use Acl\Controller\Component\AclComponent;
+use Cake\Controller\Component;
+use Cake\Controller\ComponentRegistry;
+use Cake\Core\Configure;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 
@@ -39,12 +43,30 @@ class AppController extends Controller
      */
     public function initialize()
     {
+        $this->session = $this->request->session();
         parent::initialize();
-
         $this->loadComponent('RequestHandler', [
             'enableBeforeRedirect' => false,
         ]);
         $this->loadComponent('Flash');
+        $this->loadComponent('Auth', [
+          'authenticate' => [
+              'Form' => [
+                  'fields' => [
+                      'username' => 'email',
+                      'password' => 'password'
+                  ]
+              ]
+          ],
+          'loginAction' => [
+              'controller' => 'Users',
+              'action' => 'login'
+          ],
+           //use isAuthorized in Controllers
+          'authorize' => ['Controller'],
+           // If unauthorized, return them to page they were just on
+          'unauthorizedRedirect' => false
+      ]);
 
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -52,5 +74,29 @@ class AppController extends Controller
          */
         //$this->loadComponent('Security');
         //$this->loadComponent('Csrf');
+
+        // Get Login User
+        $getUser = $this->Auth->user();
+        if($getUser) {
+            $this->loginUser = $getUser;
+            $this->set('loginUser', $this->loginUser );
+        }
+        // $this->Auth->allow();
+    }
+
+    /**
+     * isAuthorized
+     *
+     * @link   http://qiita.com/eiroh/items/f37a70a35103de6c6a1b
+     * @param  array    $user   Array of user data.
+     * @return bool
+     */
+    public function isAuthorized($user)
+    {
+        $Collection = new ComponentRegistry();
+        $acl = new AclComponent($Collection);
+        $controller = $this->request->controller;
+        $action     = $this->request->action;
+        return $acl->check(['Users' => ['id' => $user['id']]], "$controller/$action");
     }
 }

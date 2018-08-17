@@ -4,7 +4,8 @@ declare(strict_types=1);
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
-
+use Cake\Auth\DefaultPasswordHasher;
+use Cake\ORM\TableRegistry;
 /**
  * User Entity
  *
@@ -24,11 +25,33 @@ use Cake\ORM\Entity;
 class User extends Entity
 {
 
+    /**
+     * Parent node in ACL context
+     *
+     * @return array|null   array with 'model' and 'foreign_key'
+     */
     public function parentNode()
     {
-        return null;
+        if (!$this->id) {
+            return null;
+        }
+        if (isset($this->group_id)) {
+            $group_id = $this->group_id;
+        } else {
+            $users_table = TableRegistry::get('Users');
+            $user = $users_table
+                ->find('all', ['fields' => ['group_id']])
+                ->where(['id' => $this->id])
+                ->first();
+            $group_id = $user->group_id;
+        }
+        if (!$group_id) {
+            return null;
+        }
+
+        return ['Groups' => ['id' => $group_id]];
     }
-    
+
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
      *
@@ -38,12 +61,17 @@ class User extends Entity
      *
      * @var array
      */
+    public function _setPassword($value)
+    {
+        $hasher = new DefaultPasswordHasher();
+        return $hasher->hash($value);
+    }
+
     protected $_accessible = [
-        'first_name' => true,
-        'last_name' => true,
         'username' => true,
         'password' => true,
         'email' => true,
+        'group_id' => true,
         'created' => true,
         'modified' => true
     ];

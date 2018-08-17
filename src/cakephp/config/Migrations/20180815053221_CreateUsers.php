@@ -13,7 +13,7 @@ class CreateUsers extends AbstractMigration
     public function change()
     {
         $table = $this->table('users');
-        $table->addColumn('name', 'string', [
+        $table->addColumn('username', 'string', [
             'default' => null,
             'limit' => 255,
             'null' => false,
@@ -28,6 +28,11 @@ class CreateUsers extends AbstractMigration
             'limit' => 255,
             'null' => false,
         ]);
+        $table->addColumn('group_id', 'integer', [
+            'default' => null,
+            'limit' => 11,
+            'null' => false,
+        ])->addIndex(['group_id']);
         $table->addColumn('created', 'datetime', [
             'default' => null,
             'null' => false,

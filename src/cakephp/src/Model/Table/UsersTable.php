@@ -40,6 +40,10 @@ class UsersTable extends Table
         $this->setTable('users');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+        $this->addBehavior('Acl.Acl', ['type' => 'requester']);
+        $this->belongsTo('Groups', [
+            'foreignKey' => 'group_id'
+        ]);
 
         $this->addBehavior('Timestamp');
     }

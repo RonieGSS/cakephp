@@ -15,6 +15,15 @@ use Cake\ORM\Table;
  */
 class GroupsTable extends Table
 {
+    /**
+     * permission const
+     *
+     * @var int ADMIN   administrator level permission
+     * @var int USER    user level permission
+     */
+    const ADMIN = 1;
+    const USER = 2;
+
 	/**
      * initialize
      *
@@ -23,11 +32,15 @@ class GroupsTable extends Table
      */
     public function initialize(array $config)
     {
-        $this->table('groups');
-        $this->displayField('label');
+        $this->setTable('groups');
+        $this->setDisplayField('label');
+        $this->setPrimaryKey('id');
         $this->addBehavior('Acl.Acl', ['type' => 'requester']);
         $this->addBehavior('Timestamp');
 
-        $this->hasMany('Users');
+        $this->hasMany('Users', [
+            'foreignKey' => 'group_id'
+        ]);
+
     }
 }

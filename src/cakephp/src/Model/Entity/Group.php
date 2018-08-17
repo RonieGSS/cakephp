@@ -18,10 +18,17 @@ class Group extends Entity
     /**
      * Parent node in ACL context
      *
-     * @return null 
+     * @return null
      */
     public function parentNode()
     {
         return null;
     }
+
+    protected $_accessible = [
+        'description' => true,
+        'created' => true,
+        'name' => true,
+        'modified' => true
+    ];
 }

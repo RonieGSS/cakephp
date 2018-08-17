@@ -9,9 +9,9 @@ then
     colorEnd='\e[0m'
 fi
 
-options[0]="Mkdocs"
+options[0]="Development"
 options[1]="Cakephp"
-options[2]="Development"
+options[2]="Mkdocs"
 options[3]="Quit"
 
 cd `dirname $0`/../
@@ -25,27 +25,27 @@ echo -e "${color}
 - - - - - - - - - - - - - - - - - - - - - - - - - -
                    DESCRIPTIONS
 - - - - - - - - - - - - - - - - - - - - - - - - - -
-1) Mkdocs      => Show all mkdocs commands
-2) Cakephp     => Show all cakephp commands
-3) Development => Show all development commands
+1) Development => Show all development tools
+2) Cakephp     => Show docker commands for cakephp
+3) Mkdocs      => Show all mkdocs commands
 4) Quit        => Close the panel
 = = = = = = = = = = = = = = = = = = = = = = = = = =
 "
 select opt in "${options[@]}"
 do
     case $opt in
-        "Mkdocs")
-            bash bin/bin/mkdocs
-            break
-            ;;
-        "Cakephp")
-            bash bin/bin/cakephp
-            break
-            ;;
         "Development")
             bash bin/bin/development
             break
-            ;;    
+            ;; 
+        "Cakephp")
+            bash bin/bin/cakephp
+            break
+            ;;  
+        "Mkdocs")
+            bash bin/bin/mkdocs
+            break
+            ;; 
         "Quit")
             break
             ;;
