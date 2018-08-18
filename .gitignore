@@ -26,6 +26,7 @@ src/cakephp/image/*
 src/cakephp/[Cc]onfig/database.php
 src/cakephp/[Cc]onfig/profile.php
 src/cakephp/vendor/*
+src/cakephp/config/Migrations/schema-dump-default.lock
 src/cakephp/config/app.php
 src/cakephp/tmp/*
 src/cakephp/logs/*
