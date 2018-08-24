@@ -1,3 +1,3 @@
-# Welcome to Share-Shima Mkdocs
+# Welcome to Mkdocs
 
 ## Run bin/serve to Begin!!!

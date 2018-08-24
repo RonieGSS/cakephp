@@ -1,7 +1,7 @@
 #! /bin/bash
 
 containerName='hxhronie_cakephp'
-if [[ $(docker ps -q -f name=$containerName) ]];
+if docker ps -q -f name=$containerName;
 then
 	docker exec -it $containerName /bin/bash -c "bin/$@"
 else
