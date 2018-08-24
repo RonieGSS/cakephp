@@ -9,8 +9,8 @@ echo '
 - - - - - - - - - - - - - - - - - - - - - - - - - -
                    DESCRIPTIONS
 - - - - - - - - - - - - - - - - - - - - - - - - - -
-1) Create Seed        => Migrate all acl tables
-2) Migrate Seed       => Create migration file
+1) Create Seed        => Create seed file
+2) Migrate Seed       => Migrate seeds
 3) Migrate Acl Tables => Migrate all acl tables
 4) Migration Create   => Create migration file
 5) Migration Migrate  => Run all migrations
