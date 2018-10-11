@@ -41,11 +41,10 @@ source ./ops/docker/bin/is_site_ready
 # Check if site is ready meaning it shows apache2 logs
 isSiteReady 'hxhronie_cakephp' 'apache2'
 
-bash ops/docker/cakephp/development/bin/exec "migration_rollback"
 bash ops/docker/cakephp/development/bin/exec "migration_migrate"
 bash ops/docker/cakephp/development/bin/exec "migrate_acl_tables"
-bash ops/docker/cakephp/development/bin/exec "seed_migrate"
 bash ops/docker/cakephp/development/bin/exec "update_acl"
+bash ops/docker/cakephp/development/bin/exec "seed_migrate"
 
 echo -e "${color}
 	  ==========================================
