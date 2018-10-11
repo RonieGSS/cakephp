@@ -9,6 +9,7 @@ then
     colorEnd='\e[0m'
 fi
 containerNames=("hxhronie_cakephp" "hxhronie_phpmyadmin" "hxhronie_mysql")
+volume_name='development_mysql_data'
 
 for containerName in ${containerNames[*]}
 do
