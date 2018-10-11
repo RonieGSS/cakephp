@@ -18,6 +18,15 @@ do
 		docker stop $containerName
 		echo "Deleting ${containerName} container..."
 		docker rm $containerName
+
+		if [ "$container_name" == "shma_mysql" ];
+		then
+			if docker volume ls | grep $volume_name | &>/dev/null;
+			then
+				echo "Deleting ${volume_name} volume..."
+				docker volume rm $volume_name
+			fi
+		fi
 	fi
 done
 
